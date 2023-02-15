@@ -1,0 +1,5 @@
+.Cards{
+    display: flex;
+    justify-content: space-around;
+    border: 25px solid rgb(20, 172, 192);
+}
