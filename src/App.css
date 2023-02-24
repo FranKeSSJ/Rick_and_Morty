@@ -1,3 +1,19 @@
 .App {
    text-align: center;
+   
+   box-shadow: 0 20px 40px rgba(0,0,0, 0.5);
+}
+@media (max-width: 600px) {
+   .App{
+     
+     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Frick-and-morty-space_a2VlbGaUmZqaraWkpJRsZ2WtZmdtZQ.jpg&f=1&nofb=1&ipt=0e1c43d1a661dda00934be5989b9812401251ca43c39991e0df75c0fe3bcf92b&ipo=images");
+     background-size: cover;
+   }
+   
+   
+ }
+.rick{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
