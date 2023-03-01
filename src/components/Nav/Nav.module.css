@@ -1,0 +1,8 @@
+.navegacion{
+    display: flex;
+    justify-content: right;
+
+    background-color: rgb(70, 100, 233);
+    justify-content: right;
+    height: 50px;
+}

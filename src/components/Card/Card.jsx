@@ -4,7 +4,7 @@ export default function Card(props) {
    return (
       <div className={estilos.Card}>
          
-         <button onClick={()=>props.onClose()} className={estilos.closeButton}>X</button>
+         <button onClick={props.onClose} className={estilos.closeButton}>X</button>
          <h2 className={estilos.name}>{props.name}</h2>
          <img  src={props.image} alt={props.name} className={estilos.image} />
          <div className={estilos.datos}>
