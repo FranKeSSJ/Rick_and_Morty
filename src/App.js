@@ -1,9 +1,10 @@
 import './App.css'
-import Card from './components/Card/Card.jsx'
 import Cards from './components/Cards/Cards.jsx'
-import SearchBar from './components/SearchBar/SearchBar.jsx'
 import { useState } from 'react'
 import Nav from './components/Nav/Nav.jsx'
+import { Route, Routes } from 'react-router-dom'
+import About from './components/About/About'
+import Detail from './components/Detail/Detail'
 //1:36
 function App () {
  //creando estado
@@ -25,8 +26,31 @@ function App () {
   }
 
   return (
+  // <Nav /> debe que aparecer en todas las rutas.
+  // <Cards /> debe aparecer sólo en la ruta /home.
+  // <About /> debe aparecer sólo en la ruta /about.
+  // <Detail /> debe aparecer sólo en la ruta /detail/:detailId
     <div className='App' style={{ padding: '25px' }}>
       <div>
+        <Nav 
+          onSearch={onSearch}
+        />
+        <hr/>
+        <Routes>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/home' element={
+            <Cards 
+              characters={characters}
+              onClose={onClose}
+            />
+          }/>
+          <Route path='/detail/:detailId' element={<Detail/>}/>
+        </Routes>
+      </div>
+
+   
+      
+      {/* <div>
         <Nav
           onSearch={onSearch}
         />
@@ -38,7 +62,7 @@ function App () {
           onClose={onClose}
         />
       </div>
-      <hr/>
+      <hr/> */}
 
 
 

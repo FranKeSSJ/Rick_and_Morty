@@ -1,8 +1,25 @@
 .navegacion{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
     display: flex;
-    justify-content: right;
-
-    background-color: rgb(70, 100, 233);
-    justify-content: right;
-    height: 50px;
+    
+    flex-direction: column;
+    background-color: rgb(233, 62, 10);
+    
+    height: 70px;
+}
+.NavLinks{
+    
+    /* border: 5px solid aliceblue; */
+    margin-top: 5px;
+    margin-bottom:-10px;
+   
+    
+}
+.NavLinks button {
+    height: 35px;
+    width: 80px;
+    
+    
 }
